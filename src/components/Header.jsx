@@ -16,7 +16,7 @@ const Header = () => {
                 <Link to="/about">私について</Link>
               </li>
               <li>
-                <Link to="/service">サービス</Link>
+                <Link to="/skill">できること</Link>
               </li>
               <li>
                 <Link to="/works">制作実績</Link>
