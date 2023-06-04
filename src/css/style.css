@@ -185,3 +185,29 @@ a:hover {
   margin-top: 20px;
   color: #888;
 }
+
+.service {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.service-items {
+  display: flex;
+}
+
+.service-item {
+  width: 33.3%;
+  padding: 40px 20px;
+}
+
+.service-name {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.service-lead {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em
+}
