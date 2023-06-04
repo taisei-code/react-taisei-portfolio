@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -8,10 +9,18 @@ const Header = () => {
           <h1 className='logo'></h1>
           <nav>
             <ul className="nav-list">
-              <li><a href="#about">私について</a></li>
-              <li><a href="#service">サービス</a></li>
-              <li><a href="#works">制作実績</a></li>
-              <li><a href="#contact">お問い合わせ</a></li>
+              <li>
+                <Link to="/about">私について</Link>
+              </li>
+              <li>
+                <Link to="/service">サービス</Link>
+              </li>
+              <li>
+                <Link to="/works">制作実績</Link>
+              </li>
+              <li>
+                <Link to="/contact">お問い合わせ</Link>
+              </li>
             </ul>
           </nav>
         </div>
