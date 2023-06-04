@@ -10,6 +10,9 @@ const Header = () => {
           <nav>
             <ul className="nav-list">
               <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
                 <Link to="/about">私について</Link>
               </li>
               <li>
