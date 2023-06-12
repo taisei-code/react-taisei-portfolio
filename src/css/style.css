@@ -491,3 +491,389 @@ input[type="submit"]:hover {
   padding-top: 70px;
   height: 100vh;
 }
+
+@media screen and (max-width: 1199px) {
+  .pc_only {
+    display: block;
+  }
+  /* section */
+  .section-title {
+    margin-bottom: 5vw;
+    font-size: 2.5vw;
+  }
+  .section-title span {
+    font-size: 1vw;
+    margin-bottom: 1.25vw;
+  }
+
+  /* header */
+  .header-wrapper {
+    height: 8.333vw;
+  }
+  .nav-item:not(:first-child) {
+    margin-left: 2.5vw;
+  }
+  .nav-list {
+    padding-right: 1.667vw;
+  }
+  .nav-item a {
+    font-size: 1.333vw;
+  }
+
+  /* about */
+  .about {
+    padding: 8.333vw 0;
+  }
+  .about-wrapper {
+    padding: 0 2.5vw;
+  }
+  .about-title {
+    font-size: 1.667vw;
+  }
+  .about-lead,
+  .about-hobby {
+    font-size: 1.333vw;
+  }
+  .about-hobby {
+    margin-top: 1.667vw;
+  }
+
+  /* service */
+  .service {
+    padding: 8.333vw 0;
+  }
+  .service-item {
+    padding: 3.333vw 1.667vw;
+  }
+  .service-name {
+    padding-bottom: 1.667vw;
+    font-size: 1.667vw;
+  }
+  .service-lead {
+    font-size: 1.083vw;
+  }
+
+  /* works */
+  .works {
+    padding: 8.333vw 0;
+  }
+  .work-items {
+    justify-content: center;
+  }
+  .work-item {
+    width: 45%;
+  }
+  .work-title,
+  .work-lang,
+  .work-detail {
+    margin-top: 1.667vw;
+  }
+  .work-title {
+    font-size: 1.667vw;
+  }
+  .work-lang {
+    font-size: 1.167vw;
+  }
+  .work-detail {
+    font-size: 1.333vw;
+  }
+
+  /* contact */
+  .contact {
+    padding: 8.333vw 0;
+  }
+  form {
+    max-width: 50vw;
+  }
+  .item {
+    margin-bottom: 2.5vw;
+  }
+  .label {
+    margin-right: 1.667vw;
+    width: 11.25vw;
+    line-height: 3.083vw;
+    font-size: 1.333vw;
+  }
+  .inputs {
+    width: 41.667vw;
+  }
+  input[type="text"], input[type="email"] {
+    font-size: 1.25vw;
+    padding: 0.833vw;
+  }
+  textarea {
+    font-size: 1.25vw;
+    padding: 0.833vw;
+    height: 13.333vw;
+  }
+  input[type="submit"] {
+    width: 20.833vw;
+    height: 4.167vw;
+    font-size: 1.333vw;
+  }
+
+  /* footer */
+  .footer-top {
+    padding-top: 3.333vw;
+  }
+  .footer-top a {
+    margin: 0 1.25vw;
+    font-size: 1.167vw;
+  }
+  .footer-bottom {
+    padding: 3.333vw 0;
+    font-size: 1.167vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .pc_only {
+    display: none;
+  }
+  /* ハンバーガー */
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .toggle-btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+  .toggle-btn span:nth-child(1) {
+    top: 4px;
+  }
+  .toggle-btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle-btn span:nth-child(3) {
+    bottom: 4px;
+  }
+  .open .toggle-btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+  }
+  .open .toggle-btn span:nth-child(2) {
+    opacity: 0;
+  }
+  .open .toggle-btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
+
+  /* section */
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+  .section-title span {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  /* header */
+  nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 2;
+    opacity: 0;
+    right: -220px;
+    width: 50%;
+    opacity: 0;
+  }
+  .nav-list {
+    display: block;
+    position: relative;
+    top: 60px;
+    padding: 25px;
+  }
+  .nav-item {
+    border-bottom: 1px solid #212121;
+  }
+  .nav-item a {
+    display: block;
+    color: #212121;
+    font-size: 1.4rem;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  .nav-item a::after {
+    display: none;
+  }
+  .nav-item a:hover {
+    opacity: .8;
+  }
+  .nav-item:not(:first-child) {
+    margin-left: 0;
+  }
+  .open nav {
+  right: 0;
+  opacity: 1;
+  } 
+  .fixed {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* about */
+  .about {
+    padding: 60px 20px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+  .about-left {
+    margin-right: 0;
+    margin-bottom: 30px;;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-lead,
+  .about-hobby {
+    font-size: 1.6rem;
+  }
+  .about-hobby {
+    margin-top: 20px;
+  }
+
+  /* service */
+  .service {
+    padding: 60px 20px;
+    height: auto;
+  }
+  .service-items {
+    flex-direction: column;
+  }
+  .service-item {
+    width: 100%;
+    padding: 0;
+  }
+  .service-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .service-name {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .service-lead {
+    font-size: 1.3rem;
+  }
+
+  /* work */
+  .works {
+    padding: 60px 20px;
+  }
+  .work-items {
+    flex-direction: column;
+  }
+  .work-item {
+    width: 100%;
+  }
+  .work-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .work-item:not(:nth-child(3n + 1)) {
+    margin-left: 0;
+  }
+  .work-lp_img {
+    height: auto;
+  }
+  .work-title {
+    font-size: 2rem;
+  }
+  .work-lang,
+  .work-detail {
+    font-size: 1.4rem;
+  }
+  .work-title,
+  .work-lang,
+  .work-detail {
+    margin-top: 20px;
+  }
+
+  /* contact */
+  .contact {
+    padding: 60px 20px;
+  }
+  .contact-lead {
+    text-align: left;
+  }
+  form {
+    max-width: 600px;
+  }
+  .item {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .inputs {
+    width: 100%;
+  }
+  input[type="text"], input[type="email"] {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .label {
+    padding-left: 10px;
+    margin-right: 0;
+    width: 135px;
+    line-height: 37px;
+    font-size: 1.6rem;
+  }
+  textarea {
+    font-size: 1.5rem;
+    padding: 10px;
+    height: 160px;
+  }
+  input[type="submit"] {
+    width: 250px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
+  .thanks_lead {
+    font-size: 2rem;
+  }
+  .thanks_lead span {
+    font-size: 1.3rem;
+  }
+  /* footer */
+  .footer-top {
+    padding-top: 40px;
+  }
+  .footer-bottom {
+    padding: 40px 0;
+    font-size: 1.4rem;
+  }
+  .footer-top a {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .footer-top a:not(:last-child) {
+    margin-right: 10px;
+  }
+
+}

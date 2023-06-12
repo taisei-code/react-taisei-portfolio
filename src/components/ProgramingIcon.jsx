@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProgramingIcon = (props) => {
-  console.log(props);
+const ProgramingIcon = ({ src }) => {
 
-  return <img src={props.src} />;
+  return <img src={src} />;
+  
 }
 
 export default ProgramingIcon

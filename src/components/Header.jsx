@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-      <header className='header'>
-        <div className='header-inner'>
-          <h1 className='logo'></h1>
+      <header className="header">
+        <div className="header-inner">
+          <h1 className="logo"></h1>
           <nav>
             <ul className="nav-list">
               <li>
@@ -26,10 +26,15 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+          <div className="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </header>
     </>
-  )
+  );
 }
 
 export default Header
