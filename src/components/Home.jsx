@@ -30,7 +30,7 @@ const Home = () => {
                 シンプルで分りやすく、心を動かす。
               </h3>
               <p className="about-lead">
-                はじめまして！埼玉県在住のTAISEIと申します。
+                はじめまして！<br className="sp-only" />埼玉県在住のTAISEIと申します。
                 <br />
                 <br />
                 【経歴】
@@ -63,11 +63,7 @@ const Home = () => {
               <ProgramingIcon src="images/css3.svg" />
               <h3 class="service-name">HTML/CSS</h3>
               <p class="service-lead">
-                1つ1つのタグの意味を理解し、自分以外の誰が見ても分かりやすいクラス名を付けてホームページを公開後も運用しやすいコーディングを意識しています。
-                <br />
-                また、CSSのグリットレイアウトの基本を理解しており
-                <br />
-                フレックスボックスでは難しいレイアウトにも柔軟に対応できます。
+                1つ1つのタグの意味を理解し、自分以外の誰が見ても分かりやすいクラス名を付けてホームページを公開後も運用しやすいコーディングを意識しています。また、CSSのグリットレイアウトの基本を理解しておりフレックスボックスでは難しいレイアウトにも柔軟に対応できます。
               </p>
             </div>
             <div className="service-item">
@@ -81,9 +77,7 @@ const Home = () => {
               <ProgramingIcon src="images/react.svg" />
               <div className="service-name">React</div>
               <div className="service-lead">
-                JavaScriptの壁を感じながらも新しいことに挑戦したいと
-                <br />
-                思い、Reactの学習を始めました。
+                JavaScriptの壁を感じながらも新しいことに挑戦したいと思い、Reactの学習を始めました。
               </div>
             </div>
           </div>

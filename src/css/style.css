@@ -60,7 +60,6 @@ a:hover {
   left: 0;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid #eee;
 }
 
 .header-inner {
@@ -269,13 +268,13 @@ a:hover {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 2rem;
-  margin: 20px;
+  margin: 20px 0 40px;
   letter-spacing: 0.1em;
 }
 
 .service-lead {
   height: 120px;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
   text-align: left;
@@ -342,9 +341,12 @@ a:hover {
 }
 
 .work-lang,
-.work-detail,
-.work-period {
+.work-detail {
   font-size: 1.3rem;
+}
+
+.work-period {
+  font-size: 1.4rem;
 }
 
 .work-title {
@@ -492,7 +494,7 @@ input[type="submit"]:hover {
   height: 100vh;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .pc_only {
     display: block;
   }
@@ -627,7 +629,6 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 767px) {
-
   .pc_only {
     display: none;
   }
@@ -675,7 +676,7 @@ input[type="submit"]:hover {
   /* section */
   .section-title {
     font-size: 3rem;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .section-title span {
     font-size: 1.2rem;
@@ -736,7 +737,7 @@ input[type="submit"]:hover {
 
   /* about */
   .about {
-    padding: 60px 20px;
+    padding: 60px 15px 0;
   }
   .about-wrapper {
     flex-direction: column;
@@ -763,32 +764,40 @@ input[type="submit"]:hover {
 
   /* service */
   .service {
-    padding: 60px 20px;
+    padding: 60px 15px 0;
     height: auto;
   }
   .service-items {
+    margin-top: 40px;
     flex-direction: column;
   }
   .service-item {
     width: 100%;
     padding: 0;
+    margin-right: 0;
   }
   .service-item:not(:last-child) {
     margin-bottom: 40px;
   }
+  .service-item:last-child {
+    margin-bottom: 0;
+  }
   .service-name {
     font-size: 2rem;
-    padding-bottom: 20px;
+    margin: 10px 0 30px;
   }
   .service-lead {
-    font-size: 1.3rem;
+    height: auto;
   }
+  
+  
 
   /* work */
   .works {
-    padding: 60px 20px;
+    padding: 60px 15px;
   }
   .work-items {
+    margin-top: 40px;
     flex-direction: column;
   }
   .work-item {
@@ -808,7 +817,11 @@ input[type="submit"]:hover {
   }
   .work-lang,
   .work-detail {
+    font-size: 1.6rem;
+  }
+  .work-head {
     font-size: 1.4rem;
+    margin-top: 10px;
   }
   .work-title,
   .work-lang,
@@ -865,7 +878,7 @@ input[type="submit"]:hover {
     padding-top: 40px;
   }
   .footer-bottom {
-    padding: 40px 0;
+    padding: 20px 0;
     font-size: 1.4rem;
   }
   .footer-top a {
