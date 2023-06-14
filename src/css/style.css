@@ -672,6 +672,12 @@ input[type="submit"]:hover {
   .open .toggle-btn span:nth-child(3) {
     transform: translateY(-10px) rotate(315deg);
   }
+  .open {
+    background:red;
+  }
+  .close {
+    background: blue;
+  }
 
   /* section */
   .section-title {
@@ -789,7 +795,6 @@ input[type="submit"]:hover {
   .service-lead {
     height: auto;
   }
-  
   
 
   /* work */

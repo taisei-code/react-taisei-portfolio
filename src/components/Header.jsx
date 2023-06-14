@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import "../css/style.css";
+import ToggleButton from './ToggleButton';
 
 const Header = () => {
   return (
     <>
       <header className="header">
+
         <div className="header-inner">
+
           <h1 className="logo"></h1>
           <nav>
             <ul className="nav-list">
@@ -25,12 +29,11 @@ const Header = () => {
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
+
           </nav>
-          <div className="toggle-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+
+          <ToggleButton />
+
         </div>
       </header>
     </>
