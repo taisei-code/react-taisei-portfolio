@@ -663,22 +663,19 @@ input[type="submit"]:hover {
   .toggle-btn span:nth-child(3) {
     bottom: 4px;
   }
-  .open .toggle-btn span:nth-child(1) {
+  .toggle-first {
     transform: translateY(10px) rotate(-315deg);
   }
-  .open .toggle-btn span:nth-child(2) {
+  .toggle-second {
     opacity: 0;
   }
-  .open .toggle-btn span:nth-child(3) {
+  .toggle-third {
     transform: translateY(-10px) rotate(315deg);
   }
-  .open {
-    background:red;
-  }
-  .close {
-    background: blue;
-  }
-
+  .nav-open {
+    right: 0;
+    opacity: 1;
+  } 
   /* section */
   .section-title {
     font-size: 3rem;
@@ -712,10 +709,10 @@ input[type="submit"]:hover {
     top: 60px;
     padding: 25px;
   }
-  .nav-item {
+  .nav-list li {
     border-bottom: 1px solid #212121;
   }
-  .nav-item a {
+  .nav-list li a {
     display: block;
     color: #212121;
     font-size: 1.4rem;
@@ -723,19 +720,15 @@ input[type="submit"]:hover {
     text-decoration: none;
     transition-duration: 0.2s;
   }
-  .nav-item a::after {
+  .nav-list li a::after {
     display: none;
   }
-  .nav-item a:hover {
+  .nav-list li a:hover {
     opacity: .8;
   }
-  .nav-item:not(:first-child) {
+  .nav-list li:not(:first-child) {
     margin-left: 0;
   }
-  .open nav {
-  right: 0;
-  opacity: 1;
-  } 
   .fixed {
     height: 100%;
     overflow: hidden;
