@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Navigation from './Navigation';
 import "../css/style.css";
 
@@ -9,8 +8,6 @@ const Header = () => {
     <>
       <header className="header">
         <div className="header-inner">
-
-          <h1 className="logo"></h1>
 
           <Navigation />
 
